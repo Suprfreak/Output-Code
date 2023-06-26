@@ -5,7 +5,7 @@ sudo ifconfig br0 up
 sudo dhclient br0
 echo 0 | sudo tee /proc/sys/net/ipv4/ip_forward
 sudo ettercap -T
-sudo ettercap -T -q -i <interface> -M arp:remote /<router-IP>/
+sudo ettercap -T -q -i eth0 -M arp 192.168.1.1 192.168.1.102
 sudo wireshark -i <interface>
 sudo tcpdump -i <interface> -w captured_traffic.pcap
 
