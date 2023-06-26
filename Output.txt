@@ -1,3 +1,6 @@
+tcpdump -i <interface> -n 'not port 53 and not icmp and not arp and not port 67 and not port 68 and not port 137 and not port 138 and not port 161 and not port 389 and not port 445'
+
+
 wget http://archive.ubuntu.com/ubuntu/pool/universe/n/nmap/zenmap_7.60-1ubuntu5_all.deb
 sudo apt install ./zenmap_7.60-1ubuntu5_all.deb
 
