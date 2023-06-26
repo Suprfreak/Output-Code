@@ -1,32 +1,11 @@
-To run Sparrow-Wifi on Kali Linux, you'll need to follow these steps:
+┌──(kali㉿kali)-[~]
+└─$ sudo apt-get install zenmap
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Package zenmap is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
 
-1. Open a terminal in Kali Linux. You can do this by clicking on the terminal icon in the taskbar or by using the keyboard shortcut `Ctrl + Alt + T`.
-
-2. Navigate to the directory where you have downloaded Sparrow-Wifi. If you haven't changed the default download directory, you can use the following command to navigate to the "Downloads" directory:
-   ```
-   cd ~/Downloads
-   ```
-
-3. Extract the contents of the Sparrow-Wifi archive. Assuming you have downloaded a compressed file like `sparrow-wifi.zip`, you can use the following command to extract it:
-   ```
-   unzip sparrow-wifi.zip
-   ```
-
-4. After extracting the files, navigate into the Sparrow-Wifi directory:
-   ```
-   cd sparrow-wifi
-   ```
-
-5. Make sure you have the necessary dependencies installed. Sparrow-Wifi requires some external libraries and packages to function correctly. To install these dependencies, run the following command:
-   ```
-   sudo apt-get install python3 python3-pip python3-tk tshark tcpdump aircrack-ng
-   ```
-
-6. Once the dependencies are installed, you can now run Sparrow-Wifi using the following command:
-   ```
-   sudo python3 sparrow-wifi.py
-   ```
-
-   Note: Running Sparrow-Wifi with root privileges (`sudo`) is necessary because it requires access to certain system resources.
-
-That's it! Sparrow-Wifi should now launch, and you can start using it for wireless network analysis and monitoring. Make sure to follow the prompts and instructions within the Sparrow-Wifi interface to perform specific actions or capture wireless traffic.
+E: Package 'zenmap' has no installation candidate
+                                                   
