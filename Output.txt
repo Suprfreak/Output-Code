@@ -12,16 +12,12 @@ Kali Linux is based on Debian and uses DEB packages instead of RPM packages.
 To install an RPM package on Kali Linux, you'll need to use a tool called `alien` to convert 
 the RPM package to a DEB package. Here's how you can do it:
 
-1. Open a terminal and update your system's package list by running the command `
-sudo apt-get update`.
-2. Install the `alien` package by running the command `
-sudo apt-get install alien`.
-3. Once the installation is complete, navigate to the directory where you downloaded the `zenmap.rpm` file.
-4. Convert the RPM package to a DEB package by running the command `
-sudo alien zenmap.rpm`.
-5. Install the converted DEB package by running the command `
-sudo dpkg -i zenmap.deb`.
 
+sudo apt-get update
+sudo apt-get install alien
+Once the installation is complete, navigate to the directory where you downloaded the `zenmap.rpm` file
+sudo alien zenmap.rpm
+sudo dpkg -i zenmap.deb
 This should install Zenmap on your Kali Linux system.
 
 Is there anything else you would like to know?
