@@ -1,5 +1,8 @@
-Setup Termux storage by executing the following command within Termux: termux-setup-storage
-Install NetHunter by executing the following commands within Termux: pkg install wget wget -O install-nethunter-termux https://offs.ec/2MceZWr chmod +x install-nethunter-termux ./install-nethunter-termux3
+termux-setup-storage
+pkg install wget
+wget -O install-nethunter-termux https://offs.ec/2MceZWr
+chmod +x install-nethunter-termux
+./install-nethunter-termux
 
 sudo airodump-ng <interface> | sort -k <column_number> | watch -n 1 'head -n $(($(tput lines) - 2))'
 
