@@ -1,4 +1,4 @@
-https://www.getdroidtips.com/download-samsung-galaxy-xcover-pro-usb-drivers/
+https://samfw.com/firmware/SM-G715U/VZW/G715USQSEEWE1
 
 termux-setup-storage
 pkg install wget
