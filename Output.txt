@@ -30,15 +30,14 @@ This should install Zenmap on your Kali Linux system.
 
 Fix Apt-Get
 
-sudo -i
+#!/bin/bash
+# Fix Apt-Get
 
 sudo touch /etc/apt/sources.list
-
 sudo chmod 644 /etc/apt/sources.list
-
 sudo apt update
 
-Now install whatever it is that you want to install.
+# Now install whatever it is that you want to install
 
 
 
