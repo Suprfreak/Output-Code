@@ -1,0 +1,5 @@
+sudo ifdown -a
+sudo ifup -a
+sudo systemctl restart NetworkManager
+sudo dhclient -r
+sudo dhclient
