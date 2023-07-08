@@ -28,13 +28,13 @@ sudo alien zenmap.rpm
 sudo dpkg -i zenmap.deb
 This should install Zenmap on your Kali Linux system.
 
-Is there anything else you would like to know?
+Fix Apt-Get
 
-Type sudo -i.
-Type in your password.
-Type touch /etc/apt/sources. list.
-Type chmod 644 /etc/apt/sources. list.
-Type apt update.
+Type sudo -i
+touch /etc/apt/sources.list
+chmod 644 /etc/apt/sources.list
+apt update
+
 Now install whatever it is that you want to install.
 
 
