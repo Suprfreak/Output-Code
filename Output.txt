@@ -32,7 +32,7 @@ Fix Apt-Get
 
 #!/bin/bash
 # Fix Apt-Get
-
+sudo -i
 sudo touch /etc/apt/sources.list
 sudo chmod 644 /etc/apt/sources.list
 sudo apt update
